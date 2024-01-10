@@ -178,7 +178,7 @@
             {% csrf_token %}
             <div class="form-group">
               <label for="property_name" class="col-form-label">Property:</label>
-              <input type="text" name="listing" class="form-control" value="{{ listing.title }}" disabled>
+              <input type="text" name="listing" class="form-control" value="{{ listing.title }}" >
             </div>
 
             {% if user.is_authenticated %}
